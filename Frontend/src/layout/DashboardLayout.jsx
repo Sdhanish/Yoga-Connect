@@ -98,11 +98,11 @@ const DashboardLayout = () => {
                 className={`${open ? "w-72 overflow-y-auto" : "w-[90px] overflow-auto"
                     } bg-dark-purple h-screen p-5 hidden md:block pt-8 relative duration-300`}
             >
-                <div className="flex gap-x-4 items-center">
+                <div className="flex gap-x-4 items-center ">
                     <img
-                        src='/yoga-logo.png'
+                        src='/yoga-logo.jpg'
                         onClick={() => setOpen(!open)}
-                        className={`cursor-pointer h-[40px] duration-500 ${open && "rotate-[360deg]"
+                        className={` rounded-full cursor-pointer h-[40px] duration-500 ${open && "rotate-[360deg]"
                             }`}
                     />
                     <h1
@@ -122,7 +122,7 @@ const DashboardLayout = () => {
                                 <NavLink
                                     to={menuItem.to}
                                     className={({ isActive }) =>
-                                        `flex ${isActive ? "bg-red-500 text-white " : "text-[#413F44]"
+                                        `flex ${isActive ? "bg-[#0fc206] text-white " : "text-[#413F44]"
                                         }  duration-150 rounded-md p-2 cursor-pointer hover:bg-secondary hover:text-white  font-bold text-sm items-center gap-x-4  `
                                     }
                                 >
@@ -143,7 +143,7 @@ const DashboardLayout = () => {
                                 <NavLink
                                     to={menuItem.to}
                                     className={({ isActive }) =>
-                                        `flex ${isActive ? "bg-red-500 text-white " : "text-[#413F44]"
+                                        `flex ${isActive ? "bg-secondary text-white " : "text-[#413F44]"
                                         }  duration-150 rounded-md p-2 cursor-pointer hover:bg-secondary hover:text-white  font-bold text-sm items-center gap-x-4  `
                                     }
                                 >
@@ -164,7 +164,7 @@ const DashboardLayout = () => {
                                 <NavLink
                                     to={menuItem.to}
                                     className={({ isActive }) =>
-                                        `flex ${isActive ? "bg-red-500 text-white " : "text-[#413F44]"
+                                        `flex ${isActive ? "bg-[#0fc206]  text-white " : "text-[#413F44]"
                                         }  duration-150 rounded-md p-2 cursor-pointer hover:bg-secondary hover:text-white  font-bold text-sm items-center gap-x-4  `
                                     }
                                 >
